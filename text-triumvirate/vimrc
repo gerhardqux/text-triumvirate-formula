@@ -1,0 +1,39 @@
+syntax on
+set bg=dark
+
+set nocompatible
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+" colorscheme gm
+
+nmap \l :setlocal number!<CR>
+nmap \o :set paste!<CR>
+
+nmap j gj
+nmap k gk
+
+map <Space> <PageDown>
+
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+nmap \q :nohlsearch<CR>
+
+nmap <F11> :bnext<CR>
+
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp)$|(^|[/\\])\.git($|[/\\])'
+let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_dotfiles = 0
+let g:ctrlp_switch_buffer = 0
+
+nmap ; :CtrlPBuffer<CR>
+nmap \e :NERDTreeToggle<CR>
+
+set laststatus=2
+
+call pathogen#infect()
+

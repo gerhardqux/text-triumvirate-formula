@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+
+triumvirate:
+  users:
+    - gerhard
+
+  vimpkg: vim
+
+  vim:
+    bundles:
+     align: https://github.com/vim-scripts/Align
+     ctrlp.vim: https://github.com/kien/ctrlp.vim.git
+     nerdtree: https://github.com/scrooloose/nerdtree.git
+     salt-vim: https://github.com/saltstack/salt-vim
+     syntastic: https://github.com/scrooloose/syntastic.git
+     vim-powerline: https://github.com/Lokaltog/vim-powerline.git
+     vim-gocode: https://github.com/Blackrush/vim-gocode.git
+     vim-golang: https://github.com/jnwhiteh/vim-golang.git
+     vim-colors-solarized: git://github.com/altercation/vim-colors-solarized.git

@@ -1,0 +1,8 @@
+base:
+  'workstation':
+    - text-triumvirate
+  'server':
+    - text-triumvirate.tmux
+    - text-triumvirate.zsh
+  'basher':
+    - text-triumvirate.vim

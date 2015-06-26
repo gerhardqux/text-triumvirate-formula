@@ -11,22 +11,12 @@ zsh:
     - unless: "sh -c 'test -e /tmp/fastpath && test -e /bin/zsh'"
 
 {% for user in triumvirate.users %}
-{{ user }}-ohmyzsh:
-  file.directory:
-    - name: /home/{{ user }}/.oh-my-zsh
-    - user: {{ user }}
-    - mode: 755
-    - makedirs: True
-    - require:
-      - user: user-{{ user }}-exists
-
 {{ user }}-download-ohmyzsh:
   git.latest:
     - name: https://github.com/robbyrussell/oh-my-zsh.git
     - target: /home/{{ user }}/.oh-my-zsh
     - user: {{ user }}
     - require:
-      - file: {{ user }}-ohmyzsh
       - pkg: git
     - unless: "sh -c 'test -e /tmp/fastpath && test -e /home/{{ user }}/.oh-my-zsh'"
 

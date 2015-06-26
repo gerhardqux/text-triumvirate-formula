@@ -9,7 +9,7 @@ triumvirate:
 
   vim:
     bundles:
-     - align: https://github.com/vim-scripts/Align,
+     - align: https://github.com/vim-scripts/Align
      - ctrlp.vim: https://github.com/kien/ctrlp.vim.git
      - nerdtree: https://github.com/scrooloose/nerdtree.git
      - salt-vim: https://github.com/saltstack/salt-vim
